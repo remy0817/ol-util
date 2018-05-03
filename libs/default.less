@@ -1,0 +1,212 @@
+.ol-full-screen-false,
+.ol-full-screen-true {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ol-full-screen-false {
+  &:before {
+    content: "\e676";
+  }
+  &:hover:before {
+    color: #0f78ee;
+  }
+}
+
+.ol-full-screen-true {
+  &:before {
+    content: "\e611";
+  }
+  &:hover:before {
+    color: #0f78ee;
+  }
+}
+
+.mapContainer {
+  .toolbar-left-top {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+    color: #333;
+  }
+  .toolbar-right-top {
+    position: absolute;
+    right: 72px;
+    top: 20px;
+    font-size: 12px;
+    height: 42px;
+    line-height: 30px;
+    >div {
+      float: left;
+      background-color: #fff;
+      color: #454a51;
+      font-size: 12px;
+      padding: 6px 16px;
+      cursor: default;
+      position: relative;
+      &:after {
+        position: absolute;
+        right: 0;
+        top: 13px;
+        width: 1px;
+        height: 16px;
+        content: '';
+        background-color: #eee;
+      }
+      &.selector:after {
+        display: none;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &.fenceType,
+      &.mapSource {
+        position: relative;
+        i.iconfont {
+          position: absolute;
+          right: 11px;
+          top: 6px;
+          transform: rotate(90deg);
+          font-size: 16px;
+        }
+        &.opened {
+          i.iconfont {
+            transform: rotate(270deg);
+            transition: transform .3s;
+          }
+        }
+        &.closed {
+          i.iconfont {
+            transform: rotate(90deg);
+            transition: transform .3s;
+          }
+        }
+      }
+      &:before {
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        width: 16px;
+        height: 16px;
+        content: '';
+      }
+      &:hover {
+        color: #0f78ee;
+      }
+    }
+    .selector {
+      box-sizing: border-box;
+      position: relative;
+      .options {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 42px;
+        width: 100%;
+        >div {
+          background-color: #fff;
+          color: #454a51;
+          padding: 6px;
+          cursor: default;
+          position: relative;
+          &:before {
+            position: absolute;
+            left: 16px;
+            top: 12px;
+            width: 16px;
+            height: 16px;
+            content: '';
+          }
+          &:hover {
+            color: #0f78ee;
+          }
+        }
+      }
+      &.opened {
+        .options {
+          display: block;
+        }
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+  .toolbar-right-bottom {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 12px;
+    .goHome {
+      width: 26px;
+      height: 26px;
+      background-color: #fff;
+      line-height: 26px;
+      text-align: center;
+      &:hover {
+        color: #0f78ee;
+      }
+    }
+  }
+
+  .ol-viewport {
+    .hidden {
+      display: none;
+    }
+    .ol-mouse-position {
+      bottom: 20px;
+      left: 20px;
+      top: inherit;
+      right: inherit;
+      width: 220px;
+      text-align: center;
+      background-color: #fff;
+      line-height: 26px;
+      font-size: 12px;
+    }
+    .ol-zoom {
+      right: .5em;
+      bottom: 3em;
+      top: inherit;
+      left: inherit;
+    }
+    .ol-overlay-container {
+      .menu {
+        font-size: 14px;
+        width: auto;
+        text-align: left;
+        .menuItem {
+          padding: 10px 20px;
+        }
+        .menuItem:hover {
+          color: #0f78ee;
+          cursor: pointer;
+        }
+      }
+    }
+    .ol-overlaycontainer-stopevent {
+      >div {
+        >button {
+          width: 42px;
+          height: 42px;
+          margin: 0;
+          background-color: #fff;
+          color: #454a51;
+          font-weight: normal;
+          &:focus {
+            outline: 0;
+          }
+        }
+        &.ol-full-screen {
+          top: 20px;
+          right: 20px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
