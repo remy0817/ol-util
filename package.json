@@ -1,6 +1,6 @@
 {
   "name": "ol-util",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于openlayers4的二维地图工具类",
   "main": "index.js",
   "scripts": {
