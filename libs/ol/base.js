@@ -23,42 +23,42 @@ import elemUtil from '../elementExtend.js';
 import util from '../util/typeJudge/index.js';
 import coordTransform from './coordTransform.js';
 
-import markerImg from '../../assets/map/map_sign.png';
+import markerImg from '../../assets/map_sign.png';
 // 通用
-import bd_dangerImg from '../../assets/map/map_icon_net_normal.png';
-import bd_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import bd_normalImg from '../../assets/map/map_icon_net_normal.png';
-import bd_safeImg from '../../assets/map/map_icon_net_normal.png';
-import net_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import net_normalImg from '../../assets/map/map_icon_net_normal.png';
+import bd_dangerImg from '../../assets/map_icon_net_normal.png';
+import bd_alarmImg from '../../assets/map_icon_net_normal.png';
+import bd_normalImg from '../../assets/map_icon_net_normal.png';
+import bd_safeImg from '../../assets/map_icon_net_normal.png';
+import net_alarmImg from '../../assets/map_icon_net_normal.png';
+import net_normalImg from '../../assets/map_icon_net_normal.png';
 // 人
-import bd_man_dangerImg from '../../assets/map/map_icon_net_normal.png';
-import bd_man_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import bd_man_normalImg from '../../assets/map/map_icon_net_normal.png';
-import bd_man_safeImg from '../../assets/map/map_icon_net_normal.png';
-import net_man_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import net_man_normalImg from '../../assets/map/map_icon_net_normal.png';
+import bd_man_dangerImg from '../../assets/map_icon_net_normal.png';
+import bd_man_alarmImg from '../../assets/map_icon_net_normal.png';
+import bd_man_normalImg from '../../assets/map_icon_net_normal.png';
+import bd_man_safeImg from '../../assets/map_icon_net_normal.png';
+import net_man_alarmImg from '../../assets/map_icon_net_normal.png';
+import net_man_normalImg from '../../assets/map_icon_net_normal.png';
 // 车
-import bd_car_dangerImg from '../../assets/map/map_icon_net_normal.png';
-import bd_car_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import bd_car_normalImg from '../../assets/map/map_icon_net_normal.png';
-import bd_car_safeImg from '../../assets/map/map_icon_net_normal.png';
-import net_car_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import net_car_normalImg from '../../assets/map/map_icon_net_normal.png';
+import bd_car_dangerImg from '../../assets/map_icon_net_normal.png';
+import bd_car_alarmImg from '../../assets/map_icon_net_normal.png';
+import bd_car_normalImg from '../../assets/map_icon_net_normal.png';
+import bd_car_safeImg from '../../assets/map_icon_net_normal.png';
+import net_car_alarmImg from '../../assets/map_icon_net_normal.png';
+import net_car_normalImg from '../../assets/map_icon_net_normal.png';
 // 船
-import bd_ship_dangerImg from '../../assets/map/map_icon_net_normal.png';
-import bd_ship_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import bd_ship_normalImg from '../../assets/map/map_icon_net_normal.png';
-import bd_ship_safeImg from '../../assets/map/map_icon_net_normal.png';
-import net_ship_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import net_ship_normalImg from '../../assets/map/map_icon_net_normal.png';
+import bd_ship_dangerImg from '../../assets/map_icon_net_normal.png';
+import bd_ship_alarmImg from '../../assets/map_icon_net_normal.png';
+import bd_ship_normalImg from '../../assets/map_icon_net_normal.png';
+import bd_ship_safeImg from '../../assets/map_icon_net_normal.png';
+import net_ship_alarmImg from '../../assets/map_icon_net_normal.png';
+import net_ship_normalImg from '../../assets/map_icon_net_normal.png';
 // 飞机
-import bd_aircraft_dangerImg from '../../assets/map/map_icon_net_normal.png';
-import bd_aircraft_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import bd_aircraft_normalImg from '../../assets/map/map_icon_net_normal.png';
-import bd_aircraft_safeImg from '../../assets/map/map_icon_net_normal.png';
-import net_aircraft_alarmImg from '../../assets/map/map_icon_net_normal.png';
-import net_aircraft_normalImg from '../../assets/map/map_icon_net_normal.png';
+import bd_aircraft_dangerImg from '../../assets/map_icon_net_normal.png';
+import bd_aircraft_alarmImg from '../../assets/map_icon_net_normal.png';
+import bd_aircraft_normalImg from '../../assets/map_icon_net_normal.png';
+import bd_aircraft_safeImg from '../../assets/map_icon_net_normal.png';
+import net_aircraft_alarmImg from '../../assets/map_icon_net_normal.png';
+import net_aircraft_normalImg from '../../assets/map_icon_net_normal.png';
 
 const icons = {
   markerImg: markerImg,

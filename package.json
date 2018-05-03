@@ -1,0 +1,25 @@
+{
+  "name": "ol-util",
+  "version": "0.0.1",
+  "description": "基于openlayers4的二维地图工具类",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "openlayers": "^4.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remy0817/ol-util.git"
+  },
+  "keywords": [
+    "openlayers"
+  ],
+  "author": "remy0817",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remy0817/ol-util/issues"
+  },
+  "homepage": "https://github.com/remy0817/ol-util#readme"
+}
